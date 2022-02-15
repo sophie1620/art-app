@@ -10,12 +10,31 @@
   <header>
     <div class="container">
       <h1 id="page-title">Art with Monkeys</h1>
+
+      <form action="">
+        <label for="animalChoices">Select your animal to see some art!</label>
+        <select name="animalChoices" id="animalChoices">
+          <option value="monkey">Monkeys</option>
+          <option value="whale">Whale</option>
+          <option value="cow">Cow</option>
+          <option value="shark">Shark</option>
+          <option value="mice">Mice</option>
+          <option value="bird">Birds</option>
+          <option value="penguin">Penguins</option>
+          <option value="turtle">Turtles</option>
+        </select>
+      </form>
     </div>
   </header>
 
   <main>
     <!-- art fom API will be added to this div -->
-    <div class="wrapper" id="artwork"></div>
+    <div class="wrapper">
+      <!-- art from API will be added to this ul -->
+      <ul id="artwork">
+
+      </ul>
+    </div>
   </main>
   
   <script src="app.js"></script>
